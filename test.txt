@@ -1,0 +1,11 @@
+AND 0 $zero, $beq1
+AND 0 $zero, $t1
+ADD $one $t1
+ADD $one $t1
+ADD $one $t1
+ADD $one $t1
+LOOP:
+ADD $negone $t1
+AND 1 $t1 $t1
+BEQ $beq1 $beq2 LOOP:
+STORE 0 0 $t1
